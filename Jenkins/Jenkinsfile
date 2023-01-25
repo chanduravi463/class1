@@ -1,0 +1,21 @@
+pipeline{
+      agentany{
+             stages ('build'){
+                           steps{
+                                sh ' echo " build successful " '
+                                }
+                               }
+             stages ('test'){
+                          steps{
+                              sh ' echo " test the `hostname`" '
+                               }
+                            }
+
+
+
+              }
+
+         }  
+            
+        
+          
